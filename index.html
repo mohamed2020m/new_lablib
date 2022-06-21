@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabLib</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/new/favicon.png" type="image/png">
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- icomoon css -->
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <!-- Flaticon css -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Line Icons css -->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div id="preloader">
+        <div id="preloader-inner"></div>
+    </div>  
+    
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <div id="newDesign" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal_fix_my_heigth">
+                <div class="modal-header">
+                    <h5 class="modal-title mr-3">What's new ?<img src="assets/images/new/party48.png" width="35"></h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <ol class="pl-5 ml-3">
+                        <li>Changing the logo</li>
+                        <li>Changing the favicon</li>
+                        <li>Redesign the Cards Containers</li>
+                        <li>Changing buttons color</li>
+                        <li>Removing the the <q>examens</q> section</li>
+                        <li>Chaning the <q>exercice</q> section to <q>Cours</q></li>
+                        <li>Updating the footer</li>
+                    </ol>
+                    <div class="modal-header">
+                        <h5 class="modal-title">What's comming?</h5>
+                    </div>
+                    <ol class="pl-5 ml-3">
+                        <li>Codelab Space</li>
+                        <li>Admin panel</li>
+                        <li>Adding project Section</li>
+                        <li>Recent Uncompleted Codelabes with a progress bar. 
+                            this will be at the top and below navbar of the home page</li>
+                        <li>About page</li>
+                        <li>Make search Bar Working</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn border-dark ch_btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-navbar js-sticky-header site-navbar-target container_top_progress_bar" role="banner">
+        <div class="container-fluid header_Should_be_on_top">
+            <nav class="site-navigation d-flex justify-content-center align-items-center" role="navigation">
+                <div>
+                    <a href="index.html">
+                        <img src="assets/images/new/logo.png" width="48" height="45" alt="logo">
+                    </a>
+                </div>
+                <ul class="site-menu js-clone-nav m-0 d-none d-lg-block">
+                    <li><a href="index.html" class="nav-link"><i class="icon-home"></i> Accueil</a></li>
+                    <li class="has-children">
+                        <a href="cours.html" class="nav-link">Cours</a>
+                        <ul class="dropdown arrow-top">
+                            <li class="has-children">
+                                <a href="cours/Développement Mobile.html">Développement Mobile</a>
+                                <ul class="dropdown">
+                                    <li><a href="cours/Développement Mobile/kotlin.html">kotlin</a></li>
+                                    <li><a href="#">Java</a></li>
+                                    <li><a href="#">Flutter</a></li>
+                                    <li><a href="#">C#</a></li>
+                                    <li><a href="#">Android studio</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Conception</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Merise</a></li>
+                                    <li><a href="#">UML</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Bases de données</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">SQL</a></li>
+                                    <li><a href="#">Oracle PL/SQL</a></li>
+                                    <li><a href="#">SQL Server T-SQL</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Programmation C/S</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">ADO.NET</a></li>
+                                    <li><a href="#">Java Avancé</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Développement Web</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                    <li><a href="#">PHP</a></li>
+                                    <li><a href="#">ASP.NET</a></li>
+                                    <li><a href="#">JEE</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Administration systèmes</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Architecture d'un ordinateur</a></li>
+                                    <li><a href="#">Linux</a></li>
+                                    <li><a href="#">Windows</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Réseaux informatiques</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Introduction aux réseaux</a></li>
+                                    <li><a href="#">Routage</a></li>
+                                    <li><a href="#">Commutation</a></li>
+                                    <li><a href="#">Technologies WAN</a></li>
+                                    <li><a href="#">Sécurité des réseaux</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contatct.html" class="nav-link">Contact</a></li>
+                </ul>
+                <form class="js-clone-formSerach navbar-form form-inline ml-auto searchbar">
+                    <div class="input-group search-box">								
+                        <input type="text" id="search" class="form-control" aria-label="Search" placeholder="Chercher ici...">
+                        <div class="input-group-append">
+                            <button type="submit" class="border-0 px-3"><i class="icon-search text-white"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <div class="navbar-nav ml-auto">
+                    <ul class="site-menu js-clone-nav m-0 d-none d-lg-block">
+                        <li><a href="login.html" class="nav-link">Login</a></li>
+                        <li><a href="signup.html" class="nav-link"><span class="signup-btn">Sign Up</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="toggle-button d-inline-block d-lg-none">
+                <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black">
+                    <span class="icon-menu h3"></span>
+                </a>
+            </div>
+        </div>
+        <div class="top_progress_container">
+            <div class="top_progress_bar" id="myBar"></div>
+        </div> 
+    </header>
+
+    <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"><i class="icon-home mr-2"></i>Accueil</li>
+            </ol>
+        </nav>
+        <div class="container mt-5">
+            <h2 class="der_h2">Derniers <span class="derniers">Chapitres</span></h2>
+            <hr>
+            <div class="owl-carousel owl-theme mt-5">
+                <div class="owl-item">
+                    <div class="card">
+                        <div class="card_header">
+                            <span>Chapiter</span>
+                            <hr>
+                        </div>
+                        <div class="img-card">
+                            <img src="assets/images/new/badge_2.svg" alt="">
+                        </div>
+                        <div class="home_card_title">
+                            <h3><a href="kotlin/Introduction à Kotlin.html">Introduction à Kotlin</a></h3>
+                        </div>
+                        <div class="testimonial my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque.
+                        </div>
+                        <div class="home_card_body">
+                            <span class="mr-1"><i class="icon-folder-open"></i>Kotlin</span>
+                            <a href="cours/Développement%20Mobile/kotlin/Introduction%20à%20Kotlin.html" class="btn border-dark ch_btn">Commencer</a>
+                        </div>
+                        <div class="name">
+                            <cite>par Mohamed</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="card">
+                        <div class="card_header">
+                            <span>Chapiter</span>
+                            <hr>
+                        </div>
+                        <div class="img-card">
+                            <img src="assets/images/new/badge.svg" alt="">
+                        </div>
+                        <div class="home_card_title">
+                            <h3><a href="kotlin/Introduction à Kotlin.html">Introduction à Kotlin</a></h3>
+                        </div>
+                        <div class="testimonial my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque.
+                        </div>
+                        <div class="home_card_body">
+                            <span class="mr-1"><i class="icon-folder-open"></i>Kotlin</span>
+                            <a href="cours/Développement%20Mobile/kotlin/Introduction%20à%20Kotlin.html" class="btn border-dark ch_btn">Commencer</a>
+                        </div>
+                        <div class="name">
+                            <cite>par Mohamed</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="card">
+                        <div class="card_header">
+                            <span>Chapiter</span>
+                            <hr>
+                        </div>
+                        <div class="img-card">
+                            <img src="assets/images/new/badge_1.svg" alt="">
+                        </div>
+                        <div class="home_card_title">
+                            <h3><a href="kotlin/Introduction à Kotlin.html">Introduction à Kotlin</a></h3>
+                        </div>
+                        <div class="testimonial my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque.
+                        </div>
+                        <div class="home_card_body">
+                            <span class="mr-1"><i class="icon-folder-open"></i>Kotlin</span>
+                            <a href="cours/Développement%20Mobile/kotlin/Introduction%20à%20Kotlin.html" class="btn border-dark ch_btn">Commencer</a>
+                        </div>
+                        <div class="name">
+                            <cite>par Mohamed</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="card">
+                        <div class="card_header">
+                            <span>Chapiter</span>
+                            <hr>
+                        </div>
+                        <div class="img-card">
+                            <img src="assets/images/new/badge_2.svg" alt="">
+                        </div>
+                        <div class="home_card_title">
+                            <h3><a href="kotlin/Introduction à Kotlin.html">Introduction à Kotlin</a></h3>
+                        </div>
+                        <div class="testimonial my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque.
+                        </div>
+                        <div class="home_card_body">
+                            <span class="mr-1"><i class="icon-folder-open"></i>Kotlin</span>
+                            <a href="cours/Développement%20Mobile/kotlin/Introduction%20à%20Kotlin.html" class="btn border-dark ch_btn">Commencer</a>
+                        </div>
+                        <div class="name">
+                            <cite>par Mohamed</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="card">
+                        <div class="card_header">
+                            <span>Chapiter</span>
+                            <hr>
+                        </div>
+                        <div class="img-card">
+                            <img src="assets/images/new/badge.svg" alt="">
+                        </div>
+                        <div class="home_card_title">
+                            <h3><a href="kotlin/Introduction à Kotlin.html">Introduction à Kotlin</a></h3>
+                        </div>
+                        <div class="testimonial my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque.
+                        </div>
+                        <div class="home_card_body">
+                            <span class="mr-1"><i class="icon-folder-open"></i>Kotlin</span>
+                            <a href="cours/Développement%20Mobile/kotlin/Introduction%20à%20Kotlin.html" class="btn border-dark ch_btn">Commencer</a>
+                        </div>
+                        <div class="name">
+                            <cite>par Mohamed</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="card">
+                        <div class="card_header">
+                            <span>Chapiter</span>
+                            <hr>
+                        </div>
+                        <div class="img-card">
+                            <img src="assets/images/new/badge_1.svg" alt="">
+                        </div>
+                        <div class="home_card_title">
+                            <h3><a href="kotlin/Introduction à Kotlin.html">Introduction à Kotlin</a></h3>
+                        </div>
+                        <div class="testimonial my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque.
+                        </div>
+                        <div class="home_card_body">
+                            <span class="mr-1"><i class="icon-folder-open"></i>Kotlin</span>
+                            <a href="cours/Développement%20Mobile/kotlin/Introduction%20à%20Kotlin.html" class="btn border-dark ch_btn">Commencer</a>
+                        </div>
+                        <div class="name">
+                            <cite>par Mohamed</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2 class="der_h2">Derniers<span class="derniers">CodeLabs</span></h2>
+            <hr>
+            <div class="owl-carousel owl-theme mt-5">
+                <div class="owl-item">
+                    <div class="card">
+                        <div class="card_header">
+                            <span>CodeLab</span>
+                            <hr>
+                        </div>
+                        <div class="home_card_title">
+                            <h3><a href="https://developer.android.com/codelabs/basic-android-kotlin-compose-first-program?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-1-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-first-program">Votre premier programme en Kotlin</a></h3>
+                        </div>
+                        <div class="lab_duration my-2">
+                            <span><i class="icon-clock-o mr-1"></i> 2 hours 50 minutes</span>
+                        </div>
+                        <div class="testimonial my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque.
+                        </div>
+                        <div class="ch_card_body">
+                            <a href="kotlin/Introduction à Kotlin.html" class="btn border-dark ch_btn">Commencer le Lab</a>
+                        </div>
+                        <div class="ch_card-footer">
+                            <cite>06 Jun 2022, par Mohamed</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="card">
+                        <div class="card_header">
+                            <span>CodeLab</span>
+                            <hr>
+                        </div>
+                        <div class="home_card_title">
+                            <h3><a href="https://developer.android.com/codelabs/basic-android-kotlin-compose-first-program?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-1-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-first-program">Votre premier programme en Kotlin</a></h3>
+                        </div>
+                        <div class="lab_duration my-2">
+                            <span><i class="icon-clock-o mr-1"></i>50 minutes</span>
+                        </div>
+                        <div class="testimonial my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque.
+                        </div>
+                        <div class="ch_card_body">
+                            <a href="kotlin/Introduction à Kotlin.html" class="btn border-dark ch_btn">Commencer le Lab</a>
+                        </div>
+                        <div class="ch_card-footer">
+                            <cite>06 Jun 2022, par Ali</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                    <div class="card">
+                        <div class="card_header">
+                            <span>CodeLab</span>
+                            <hr>
+                        </div>
+                        <div class="home_card_title">
+                            <h3><a href="https://developer.android.com/codelabs/basic-android-kotlin-compose-first-program?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-1-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-first-program">Votre premier programme en Kotlin</a></h3>
+                        </div>
+                        <div class="lab_duration my-2">
+                            <span><i class="icon-clock-o mr-1"></i> 1 hours 30 minutes</span>
+                        </div>
+                        <div class="testimonial my-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dicta doloremque.
+                        </div>
+                        <div class="ch_card_body">
+                            <a href="kotlin/Introduction à Kotlin.html" class="btn border-dark ch_btn">Commencer le Lab</a>
+                        </div>
+                        <div class="ch_card-footer">
+                            <cite>06 Jun 2022, par Karim</cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- POURQUOI S'INSCRIRE? -->
+    <section class="whyToSub">
+        <div class="container whyToSubDiv">
+            <h3 class="text-center text-primary">POURQUOI S'INSCRIRE?</h3>
+            <div class="row justify-content-center">
+                
+                    <div class="reasons bg-secondary ">
+                        <h4><i class="icon-new_releases"></i> Nouveaux Exercices</h4>
+                        <p>Plus de 1000 exercices corrigés et 100 nouveautés en moyenne sont ajoutés par mois.</p>
+                    </div>
+                    <div class="reasons bg-secondary">
+                        <h4><i class="icon-favorite"></i> Mes Exercices Favoris</h4>
+                        <p>Explorez l'ensemble des ressources et créez des dossiers favoris pour classer les contenus qui vous intéressent.</p>
+                    </div>
+                    <div class="reasons bg-secondary">
+                        <h4><i class="icon-question_answer"></i> Mes Questions</h4>
+                        <p>Vous avez des questions? notre équipe de professionnels est en ligne pour vous aider dans vos exercices.</p>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="p-3 shadow-sm">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-sm-4">
+                    <ul>
+                        <li class="p-2">About</li>
+                        <hr>
+                        <li class="p-2"><a href="about.html">L'équipe</a></li>
+                        <li class="p-2"><a href="contatct.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li class="p-2">LabLib</li>
+                        <hr>
+                        <li class="p-2"><a href="#">Politique de confidentialité</a></li>
+                        <li class="p-2"><a href="#">Faq</a></li>
+                        <li class="p-2"><a href="#">Plan du site</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li class="p-2">Réseaux sociaux</li>
+                        <hr>
+                        <li class="p-2"><i class="icon-facebook-square mr-2"></i><a href="#"> Facebook</a></li>
+                        <li class="p-2"><i class="icon-linkedin-square mr-2"></i><a href="#"> LinkedIn</a></li>
+                        <li class="p-2"><i class="icon-twitter-square mr-2"></i><a href="#"> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-3">
+                <h6 class="text-center">Copyright © 2022 - <a href="https://lablib.herokuapp.com/" class="text-warning">LabLib</a> - Tous droits réservés</h6>
+                <p class="text-center">v.0.2, updated 06-21-22 by leeuw</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--=== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="icon-chevron-up" ></i></a>
+
+    <!--==== BACK TOP TOP PART ENDS ===--> 
+
+    <!-- javascript -->
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/jquery.preloader.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            var silder = $(".owl-carousel");
+            silder.owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: false,
+                items: 1,
+                stagePadding: 40,
+                center: true,
+                nav: false,
+                margin: 50,
+                dots: true,
+                loop: true,
+                responsive: {
+                    0: { items: 1 },
+                    480: { items: 1 },
+                    575: { items: 1 },
+                    768: { items: 2 },
+                    991: { items: 3 },
+                    1200: { items: 3 }
+                }
+            });
+        });
+    </script>
+    <script>
+        setTimeout(function(){ 
+            $(document).ready(function(){
+                $("#newDesign").modal('show');
+            })
+        }, 2000)
+    </script>
+</body>
+</html>
