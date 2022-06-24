@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2022-06-24T03:15:39+01:00",
+  "id": "your_first_program_in_kotlin",
+  "duration": 35,
+  "title": "Your first program in Kotlin",
+  "summary": "introductino to kotlin",
+  "source": "kotlin.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "kotlin"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "https://new-lablib.herokuapp.com/contatct.html",
+  "url": "your_first_program_in_kotlin"
+}

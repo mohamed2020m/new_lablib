@@ -1,0 +1,170 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Your first program in Kotlin</title>
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="./../../../../assets/images/new/favicon.png" type="image/png">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <link rel="stylesheet" href="./../../../../assets/css/style.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+      <!--====== PRELOADER PART START ======-->
+
+    <div id="preloader">
+      <div id="preloader-inner"></div>
+    </div> 
+
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="your_first_program_in_kotlin"
+                  title="Your first program in Kotlin"
+                  environment="web"
+                  feedback-link="https://new-lablib.herokuapp.com/contatct.html">
+    
+      <google-codelab-step label="Before you begin" duration="2">
+        <p class="image-container"><img alt="image_caption" src="img\\3bbebda874e6003b.png"></p>
+<p>In this course, you will build apps by writing code in the Kotlin programming language, which is the recommended language by Google for creating new Android apps.</p>
+<p>Kotlin is a modern programming language that helps developers be more productive. For example, Kotlin allows you to be more concise and write fewer lines of code for the same functionality compared to other programming languages. Apps that are built with Kotlin are also less likely to crash, resulting in a more stable and robust app for users. Essentially, with Kotlin, you can write better Android apps in a shorter amount of time. As a result, Kotlin is gaining momentum in the industry and is the language that the majority of professional Android developers use.</p>
+<p>To get started on building Android apps in Kotlin, it&#39;s important to first establish a solid foundation of programming concepts in Kotlin. With the codelabs in this pathway, you will learn about Kotlin programming basics before diving into app creation.</p>
+<h3 is-upgraded>What you&#39;ll build</h3>
+<ul>
+<li>Short programs in Kotlin that display messages when you run them.</li>
+</ul>
+<h3 class="checklist" is-upgraded>What you&#39;ll learn</h3>
+<ul class="checklist">
+<li>How to write and run a simple Kotlin program.</li>
+<li>How to modify a simple program to change the output.</li>
+</ul>
+<h3 is-upgraded>What you&#39;ll need</h3>
+<ul>
+<li>A computer with internet access and a web browser.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Get started" duration="4">
+        <p>In this codelab, you explore and modify simple programs in Kotlin. You can think of a program as a series of instructions for a computer or mobile device to perform some action, such as display a message to a user or calculate the cost of items in a shopping cart. The step-by-step instructions for what the computer should do is called code. When you modify the code in a program, the output can change.</p>
+<p>You use a tool called a code editor to write and edit your code. It&#39;s similar to a text editor in which you can write and edit text, but a code editor also provides functionality to help you write code more accurately. For example, a code editor shows autocomplete suggestions while you type, and displays error messages when code is incorrect.</p>
+<p>To practice the basics of the Kotlin language, you will use an interactive code editor called the Kotlin Playground. You can access it from a web browser, so you don&#39;t need to install any software on your computer. You can edit and run Kotlin code directly in the Kotlin Playground and see the output.</p>
+<p>Note that you can&#39;t build Android apps within the Kotlin Playground. In later pathways, you will install and use a tool called Android Studio to write and edit your Android app code.</p>
+<p>Now that you have some context on Kotlin, take a look at your first program!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Open Kotlin Playground" duration="5">
+        <p>In a web browser on your computer, <a href="#" target="_blank">open the Kotlin Playground</a>.</p>
+<p>You should see a web page similar to this image:</p>
+<p class="image-container"><img alt="image_caption" src="img\\73637fd10c41e9f8.png"></p>
+<p>There&#39;s already some default code populated in the code editor. These three lines of code make up a simple program:</p>
+<pre><code>fun main() {
+    println(&#34;Hello, world!&#34;)
+}
+</code></pre>
+<p>Even if you&#39;ve never programmed before, can you guess what the program does?</p>
+<p>See if your guess is correct by moving onto the next section!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Run your first program" duration="8">
+        <p>Click <img alt="image_caption" style="width: 30.00px" src="img\\6c206d378c2cc50f.png"> Run button to run your program.</p>
+<p>When you click the Run button, a lot happens. Code in the Kotlin programming language is meant to be understood by humans, so that people can more easily read, write, and collaborate on Kotlin programs. However, your computer doesn&#39;t immediately understand this language.</p>
+<p>You need something called the Kotlin compiler, which takes the Kotlin code you wrote, looks at it line by line, and translates it into something that the computer can understand. This process is called compiling your code.</p>
+<p>If your code compiles successfully, your program will run (or execute). When the computer executes your program, it performs each of your instructions. If you&#39;ve ever followed a cooking recipe, performing each step in the recipe is considered executing each instruction.</p>
+<p>Here&#39;s a screenshot of what you should see when you run your program.</p>
+<p class="image-container"><img alt="image_caption" src="img\\14bea1122ec05039.png"></p>
+<p>At the bottom of the code editor, you should see a pane that shows the output, or result, of your program:</p>
+<pre><code>Hello, world!
+</code></pre>
+<p>Cool! The purpose of this program is to print or display a message that says <code>Hello, world!</code></p>
+<p>Negative : <strong>Warning</strong>: If you don&#39;t see this result, copy and paste the three lines of code from the previous section into the Kotlin Playground and try again.</p>
+<p>How does this work? A Kotlin program is required to have a main function, which is the specific place in your code where the Kotlin compiler starts. The main function is the entry point, or starting point, of the program.</p>
+<p class="image-container"><img alt="image_caption" src="img\\83ab3fdb0a8c2304.png"></p>
+<p>Now you may be wondering, what is a function?</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Parts of a function" duration="15">
+        <p>A function is a segment of a program that performs a specific task. You can have many functions in your program or only a single one.</p>
+<h3 is-upgraded>Define vs. call a function</h3>
+<p>In your code, you define a function first. That means you specify all the instructions needed to perform that task.</p>
+<p>Once the function is defined, then you can call that function, so the instructions within that function can be performed or executed.</p>
+<p>Here&#39;s an analogy. You write out step-by-step instructions on how to bake a chocolate cake. This set of instructions can have a name: <code>bakeChocolateCake</code>. Every time you want to bake a cake, you can execute the <code>bakeChocolateCake</code> instructions. If you want 3 cakes, you need to execute the <code>bakeChocolateCake</code> instructions 3 times. The first step is defining the steps and giving it a name, which is considered defining the function. Then you can refer to the steps anytime you want them to be executed, which is considered calling the function.</p>
+<p>Positive : <strong>Note</strong>: You may hear the alternate phrase &#34;declare a function.&#34; The words declare and define can be used interchangeably and have the same meaning. You may also hear the term &#34;function definition&#34; or &#34;function declaration&#34;, which refer to the exact code that defines a function.</p>
+<h3 is-upgraded>Define a function</h3>
+<p>These are the key parts needed to define a function:</p>
+<ul>
+<li>The function needs a name, so you can call it later.</li>
+<li>The function can also require some inputs, or information that needs to be provided when the function is called. The function uses these inputs to accomplish its purpose. Requiring inputs are optional, and some functions require no inputs.</li>
+<li>The function also has a body which contains the instructions to perform the task.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Conclusion" duration="1">
+        <p>Great job on completing this introduction to Kotlin!</p>
+<p>You worked with simple programs in Kotlin and ran them to see text printed to the output. You modified the programs in different ways and observed how those changes affected the output. It&#39;s normal to make mistakes when programming, so you also began to learn about how to troubleshoot and correct errors in your code, which is an important skill that will help you in the future.</p>
+<p>Move on to the next codelab to learn how to use variables in Kotlin so that you can create more interesting programs!</p>
+<h3 is-upgraded>Summary</h3>
+<ul>
+<li>A Kotlin program requires a main function as the entry point of the program.</li>
+<li>To define a function in Kotlin, use the <code>fun</code> keyword, followed by the name of the function, any inputs enclosed in parentheses, followed by the function body enclosed in curly braces.</li>
+<li>The name of a function should follow camel case convention and start with a lowercase letter.</li>
+<li>Use the <code>println()</code> function call to print some text to the output.</li>
+<li>Refer to the Kotlin style guide for formatting and code conventions to follow when coding in Kotlin.</li>
+<li>Troubleshooting is the process of resolving errors in your code.</li>
+</ul>
+<h3 is-upgraded>Learn more</h3>
+<ul>
+<li>Hello World</li>
+<li>Program entry point</li>
+<li>Print to the standard output</li>
+<li>Functions</li>
+<li>Keywords and operators</li>
+<li>Functions</li>
+<li>println()</li>
+<li>Kotlin style guide</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+
+      <!-- javascript -->
+      <script src="./../../../../assets/js/jquery-3.5.1.js"></script>
+      <script src="./../../../../assets/js/popper.min.js"></script>
+      <script src="./../../../../assets/js/jquery.sticky.js"></script>
+      <script src="./../../../../assets/js/jquery.preloader.min.js"></script>
+  
+      <script src="./../../../../assets/js/main.js"></script>
+
+</body>
+</html>
