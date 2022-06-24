@@ -1,4 +1,3 @@
-
 <!doctype html>
 
 <html>
@@ -12,7 +11,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
-  <link rel="stylesheet" href="./../../../../assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .success {
       color: #1e8e3e;
@@ -23,13 +22,11 @@
   </style>
 </head>
 <body>
+  <!--====== PRELOADER PART START ======-->
 
-      <!--====== PRELOADER PART START ======-->
-
-    <div id="preloader">
-      <div id="preloader-inner"></div>
-    </div> 
-
+  <div id="preloader">
+    <div id="preloader-inner"></div>
+  </div> 
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
                   id="your_first_program_in_kotlin"
@@ -38,7 +35,7 @@
                   feedback-link="https://new-lablib.herokuapp.com/contatct.html">
     
       <google-codelab-step label="Before you begin" duration="2">
-        <p class="image-container"><img alt="image_caption" src="img\\3bbebda874e6003b.png"></p>
+        <p class="image-container"><img alt="image_caption" src="assets\\images\\3bbebda874e6003b.png"></p>
 <p>In this course, you will build apps by writing code in the Kotlin programming language, which is the recommended language by Google for creating new Android apps.</p>
 <p>Kotlin is a modern programming language that helps developers be more productive. For example, Kotlin allows you to be more concise and write fewer lines of code for the same functionality compared to other programming languages. Apps that are built with Kotlin are also less likely to crash, resulting in a more stable and robust app for users. Essentially, with Kotlin, you can write better Android apps in a shorter amount of time. As a result, Kotlin is gaining momentum in the industry and is the language that the majority of professional Android developers use.</p>
 <p>To get started on building Android apps in Kotlin, it&#39;s important to first establish a solid foundation of programming concepts in Kotlin. With the codelabs in this pathway, you will learn about Kotlin programming basics before diving into app creation.</p>
@@ -46,10 +43,10 @@
 <ul>
 <li>Short programs in Kotlin that display messages when you run them.</li>
 </ul>
-<h3 class="checklist" is-upgraded>What you&#39;ll learn</h3>
-<ul class="checklist">
+<h3 is-upgraded>What you&#39;ll learn</h3>
+<ul>
 <li>How to write and run a simple Kotlin program.</li>
-<li>How to modify a simple program to change the output.</li>
+<li>A computer with internet access and a web browser.</li>
 </ul>
 <h3 is-upgraded>What you&#39;ll need</h3>
 <ul>
@@ -72,7 +69,7 @@
       <google-codelab-step label="Open Kotlin Playground" duration="5">
         <p>In a web browser on your computer, <a href="#" target="_blank">open the Kotlin Playground</a>.</p>
 <p>You should see a web page similar to this image:</p>
-<p class="image-container"><img alt="image_caption" src="img\\73637fd10c41e9f8.png"></p>
+<p class="image-container"><img alt="image_caption" src="assets\\images\\73637fd10c41e9f8.png"></p>
 <p>There&#39;s already some default code populated in the code editor. These three lines of code make up a simple program:</p>
 <pre><code>fun main() {
     println(&#34;Hello, world!&#34;)
@@ -85,19 +82,20 @@
       </google-codelab-step>
     
       <google-codelab-step label="Run your first program" duration="8">
-        <p>Click <img alt="image_caption" style="width: 30.00px" src="img\\6c206d378c2cc50f.png"> Run button to run your program.</p>
+        <p>Click <img alt="image_caption" src="assets\\images\\6c206d378c2cc50f.png" width="25px"> Run button to run your program.</p>
 <p>When you click the Run button, a lot happens. Code in the Kotlin programming language is meant to be understood by humans, so that people can more easily read, write, and collaborate on Kotlin programs. However, your computer doesn&#39;t immediately understand this language.</p>
 <p>You need something called the Kotlin compiler, which takes the Kotlin code you wrote, looks at it line by line, and translates it into something that the computer can understand. This process is called compiling your code.</p>
 <p>If your code compiles successfully, your program will run (or execute). When the computer executes your program, it performs each of your instructions. If you&#39;ve ever followed a cooking recipe, performing each step in the recipe is considered executing each instruction.</p>
 <p>Here&#39;s a screenshot of what you should see when you run your program.</p>
-<p class="image-container"><img alt="image_caption" src="img\\14bea1122ec05039.png"></p>
+<p class="image-container"><img alt="image_caption" src="assets\\images\\14bea1122ec05039.png"></p>
 <p>At the bottom of the code editor, you should see a pane that shows the output, or result, of your program:</p>
-<pre><code>Hello, world!
+<pre><code language="language-bash" class="language-bash">Hello, world!
 </code></pre>
 <p>Cool! The purpose of this program is to print or display a message that says <code>Hello, world!</code></p>
-<p>Negative : <strong>Warning</strong>: If you don&#39;t see this result, copy and paste the three lines of code from the previous section into the Kotlin Playground and try again.</p>
+<aside class="warning"><p>To get an API key you need register or sign in to TomTom Developer Portal. Request an evaluation API key to access the service you want to use the SDK with.</p>
+</aside>
 <p>How does this work? A Kotlin program is required to have a main function, which is the specific place in your code where the Kotlin compiler starts. The main function is the entry point, or starting point, of the program.</p>
-<p class="image-container"><img alt="image_caption" src="img\\83ab3fdb0a8c2304.png"></p>
+<p class="image-container"><img alt="image_caption" src="assets\\images\\83ab3fdb0a8c2304.png"></p>
 <p>Now you may be wondering, what is a function?</p>
 
 
@@ -109,7 +107,8 @@
 <p>In your code, you define a function first. That means you specify all the instructions needed to perform that task.</p>
 <p>Once the function is defined, then you can call that function, so the instructions within that function can be performed or executed.</p>
 <p>Here&#39;s an analogy. You write out step-by-step instructions on how to bake a chocolate cake. This set of instructions can have a name: <code>bakeChocolateCake</code>. Every time you want to bake a cake, you can execute the <code>bakeChocolateCake</code> instructions. If you want 3 cakes, you need to execute the <code>bakeChocolateCake</code> instructions 3 times. The first step is defining the steps and giving it a name, which is considered defining the function. Then you can refer to the steps anytime you want them to be executed, which is considered calling the function.</p>
-<p>Positive : <strong>Note</strong>: You may hear the alternate phrase &#34;declare a function.&#34; The words declare and define can be used interchangeably and have the same meaning. You may also hear the term &#34;function definition&#34; or &#34;function declaration&#34;, which refer to the exact code that defines a function.</p>
+<aside class="special"><p><strong>Note:</strong> You may hear the alternate phrase &#34;declare a function.&#34; The words declare and define can be used interchangeably and have the same meaning. You may also hear the term &#34;function definition&#34; or &#34;function declaration&#34;, which refer to the exact code that defines a function.</p>
+</aside>
 <h3 is-upgraded>Define a function</h3>
 <p>These are the key parts needed to define a function:</p>
 <ul>
@@ -125,7 +124,7 @@
         <p>Great job on completing this introduction to Kotlin!</p>
 <p>You worked with simple programs in Kotlin and ran them to see text printed to the output. You modified the programs in different ways and observed how those changes affected the output. It&#39;s normal to make mistakes when programming, so you also began to learn about how to troubleshoot and correct errors in your code, which is an important skill that will help you in the future.</p>
 <p>Move on to the next codelab to learn how to use variables in Kotlin so that you can create more interesting programs!</p>
-<h3 is-upgraded>Summary</h3>
+<h2 is-upgraded>Summary</h2>
 <ul>
 <li>A Kotlin program requires a main function as the entry point of the program.</li>
 <li>To define a function in Kotlin, use the <code>fun</code> keyword, followed by the name of the function, any inputs enclosed in parentheses, followed by the function body enclosed in curly braces.</li>
@@ -134,16 +133,15 @@
 <li>Refer to the Kotlin style guide for formatting and code conventions to follow when coding in Kotlin.</li>
 <li>Troubleshooting is the process of resolving errors in your code.</li>
 </ul>
-<h3 is-upgraded>Learn more</h3>
+<h2 is-upgraded>Learn more</h2>
 <ul>
-<li>Hello World</li>
-<li>Program entry point</li>
-<li>Print to the standard output</li>
-<li>Functions</li>
-<li>Keywords and operators</li>
-<li>Functions</li>
-<li>println()</li>
-<li>Kotlin style guide</li>
+<li><a href="#" target="_blank">Hello World</a></li>
+<li><a href="#" target="_blank">Program entry point</a></li>
+<li><a href="#" target="_blank">Print to the standard output</a></li>
+<li><a href="#" target="_blank">Keywords and operators</a></li>
+<li><a href="#" target="_blank">Functions</a></li>
+<li><a href="#" target="_blank">println()</a></li>
+<li><a href="#" target="_blank">Kotlin style guide</a></li>
 </ul>
 
 
@@ -157,14 +155,12 @@
   <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
   <script src="//support.google.com/inapp/api.js"></script>
 
+  <!-- javascript -->
+  <script src="./../../../../assets/js/jquery-3.5.1.js"></script>
+  <script src="./../../../../assets/js/popper.min.js"></script>
+  <script src="./../../../../assets/js/jquery.preloader.min.js"></script>
 
-      <!-- javascript -->
-      <script src="./../../../../assets/js/jquery-3.5.1.js"></script>
-      <script src="./../../../../assets/js/popper.min.js"></script>
-      <script src="./../../../../assets/js/jquery.sticky.js"></script>
-      <script src="./../../../../assets/js/jquery.preloader.min.js"></script>
-  
-      <script src="./../../../../assets/js/main.js"></script>
+  <script src="./../../../../assets/js/main.js"></script>
 
 </body>
 </html>
